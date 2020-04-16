@@ -19,7 +19,31 @@ First we will describe one class and its attributes. Below is the source code fo
 
 ```cs
 public class Person {
-    private string name;
-    private int age;
+  private string name;
+  private int age;
 }
 ```
+
+In a class diagram a class is represented by a rectangle with the name of the class written on top. A line below the name of the class divides the name from the list of attributes (names and types of the class variables). The attributes are written one attribute per line.
+
+In a class diagram, class attributes are written "attributeName: attributeType". + before the attribute name means the attribute is public, and - the attribute is private.
+
+![Person with name and age](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/classdiagram-person-name-age.png)
+
+## Describing class constructor
+
+Below we have the source code for a constructor for our Person class. The constructor gets the name of the person as a parameter.
+
+```cs
+public class Person {
+  private string name;
+  private int age;
+
+  public Person(string initialName) {
+      this.name = initialName;
+      this.age = 0;
+  }
+}
+```
+
+![Person with name, age and constructor](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/classdiagram-person-name-age-constructor.png)
