@@ -240,3 +240,5 @@ One very popular tool for drawing diagrams is [**yUML.me**](https://yuml.me). Yo
 Another tool, which is more versatile but has bit of a learning curve, is [**Draw.io**](https://draw.io). With this tool, you can create any charts. This time the charts are not done by code, but by placing elements on a grid or canvas, or if you feel adventurous, drawing freehand.
 
 Finally, [**LucidChart**](https://lucidchart.com) is a commercial tool for drawing all UML charts. You can also have a free trial for the software. It is a very versatile tool, and quite used in the industry. 
+
+[**You can find the exercises here**](/exercises/#part-1)
