@@ -231,4 +231,12 @@ Class diagrams are an excellent way to describe a problem and a problem-domain t
 
 Often a class diagram is drawn on a whiteboard or a big sheet of paper during the design phase. They should be though of as helpful tools to build a program, which can be thrown away afterwards. You should not use too much energy to think about the correctness and details of the modeling language. Class diagram should also be drawn in a suitable level of abstraction. For example if you have tens of classes, it might not be worth it to describe each attribute and each method of each class: getting a good overview of the program structure is the most important.
 
-The class diagrams in the material have been drawn using [**yUML**](https://yuml.me/).
+## Tools of the trade
+
+The class diagrams in the material have been drawn using [**yUML.me**](https://yuml.me/).
+
+One very popular tool for drawing diagrams is [**yUML.me**](https://yuml.me). You can draw any diagrams, but class diagrams are by far the most popular use for the tool. The strength of this tool is in the way the diagrams are represented: as code. When usually diagram tools are focused on drawing the tool, with yUML.me you can write your diagram as code. The downside is, that with large diagrams, you have to do quite much writing.
+
+Another tool, which is more versatile but has bit of a learning curve, is [**Draw.io**](https://draw.io). With this tool, you can create any charts. This time the charts are not done by code, but by placing elements on a grid or canvas, or if you feel adventurous, drawing freehand.
+
+Finally, [**LucidChart**](https://lucidchart.com) is a commercial tool for drawing all UML charts. You can also have a free trial for the software. It is a very versatile tool, and quite used in the industry. 
