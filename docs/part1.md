@@ -197,3 +197,7 @@ public class Person
 
 In a class diagram inheritance is described by an arrow with a triangle head. The triangle points to the class being inherited from. In the below example the Motor inherits the class Part.
 
+
+![Engine](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/part-engine-inherit.png)
+
+In the below example the class diagram describes the classes from the Product warehouse exercise. The ProductWarehouseWithHistory class inherits the ProductWarehouse class which in turn inherits the Warehouse class. ChangeHistory is a separate class connected to the ProductWarehouse. ProductWarehouseWithHistory knows about the ChangeHistory but the ChangeHistory does now know about the ProductWarehouseWithHistory.
