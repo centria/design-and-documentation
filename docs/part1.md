@@ -146,3 +146,7 @@ public class Book
 ```
 
 ![Book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/book-with-many-authors.png)
+
+If there is no arrowhead in a connection, both classes know about each other. Below is an example where a book knows about its author and a person knows about a book they have written.
+
+![Book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/books-and-authors.png)
