@@ -85,3 +85,38 @@ In a class diagram we list all class methods with the constructors -- constructo
 A class diagram describes classes and their attributes, constructors and methods as well as the connections between classes. However a class diagram tells us nothing about the implementation of the constructors or the methods. Therefore a class diagram describes the structure of an object but not its functionality.
 
 For example the method PrintPerson uses the class attributes name and age, but this cannot be seen from the class diagram.
+
+## Connections between classes
+
+In a class diagram, the connections between classes are shown as arrows. The arrows also show the direction of the connection.
+
+Below we have a class Book.
+
+```cs
+public class Book 
+{
+  private string name;
+  private string publisher;
+
+  // constructors and methods
+}
+```
+
+![Book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/classdiagram-book-name-and-publisher.png)
+
+If we add a variable author, type of which is Person, in the source code the variable is declared like all other class variables.
+
+```cs
+public class Book 
+{
+  private string name;
+  private string publisher;
+  private Person author;
+
+  // constructors and methods
+}
+```
+
+In a class diagram variables which refer to other objects are not written with the rest of the class attributes, but are shown as connections between the classes. In the class diagram below we have the classes Person and Book, and the connection between them.
+
+![Book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/class-diagram-book-person-relation.png)
