@@ -201,3 +201,34 @@ In a class diagram inheritance is described by an arrow with a triangle head. Th
 ![Engine](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/part-engine-inherit.png)
 
 In the below example the class diagram describes the classes from the Product warehouse exercise. The ProductWarehouseWithHistory class inherits the ProductWarehouse class which in turn inherits the Warehouse class. ChangeHistory is a separate class connected to the ProductWarehouse. ProductWarehouseWithHistory knows about the ChangeHistory but the ChangeHistory does now know about the ProductWarehouseWithHistory.
+
+![Warehouse](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/warehouse.png)
+
+Inheritance of abstract classes is described almost the same way as regular classes. However we add the description \<\<abstract\>\> above the name of the class. The name of the class and its abstract methods are also written in cursive.
+
+![Warehouse](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/boxes.png)
+
+## Describing interfaces
+
+In class diagrams interfaces are written \<\<interface\>\> NameOfTheInterface. Below we describe an interface IReadable.
+
+```cs
+public interface IReadable 
+{
+
+}
+```
+
+![IReadable](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/ireadable.png)
+
+Methods are described just like they are for a class.
+
+Implementing an interface is shown as a dashed arrow with a triangle arrowhead. Below is described a situation where Book implements interface IReadable.
+
+![Book-IReadable](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/book-ireadable.png)
+
+Class diagrams are an excellent way to describe a problem and a problem-domain to others. They are particularily useful when a programmer is designing a program with multiple classes.
+
+Often a class diagram is drawn on a whiteboard or a big sheet of paper during the design phase. They should be though of as helpful tools to build a program, which can be thrown away afterwards. You should not use too much energy to think about the correctness and details of the modeling language. Class diagram should also be drawn in a suitable level of abstraction. For example if you have tens of classes, it might not be worth it to describe each attribute and each method of each class: getting a good overview of the program structure is the most important.
+
+The class diagrams in the material have been drawn using [**yUML**](https://yuml.me/).
