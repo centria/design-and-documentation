@@ -150,3 +150,50 @@ public class Book
 If there is no arrowhead in a connection, both classes know about each other. Below is an example where a book knows about its author and a person knows about a book they have written.
 
 ![Book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/books-and-authors.png)
+
+```cs
+public class Person 
+{
+  private string name;
+  private int age;
+  private Book book;
+
+  // ...
+}
+```
+
+```cs
+public class Book 
+{
+  private string name;
+  private string publisher;
+  private List<Person> authors;
+
+  // ..
+}
+```
+
+As you can see, by default -- if there is no star on the connection -- the connection is singular. The classes above are interesting, because a Person can only have one book.
+
+If a person can have multiple books and a book can have multiple authors, we add a star to both ends of the connection:
+
+![Book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/books-with-authors.png)
+
+Now the person class would be as follows:
+
+```cs
+
+public class Person 
+{
+  private string name;
+  private int age;
+  private List<Book> books;
+
+  // ...
+}
+```
+
+## Describing inheritance
+
+In a class diagram inheritance is described by an arrow with a triangle head. The triangle points to the class being inherited from. In the below example the Motor inherits the class Part.
+
