@@ -2,7 +2,7 @@
 title: "Exercises"
 permalink: /exercises/
 nav_order: 7
-published: false
+published: true
 ---
 
 # Exercises
