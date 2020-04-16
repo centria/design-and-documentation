@@ -241,4 +241,4 @@ Another tool, which is more versatile but has bit of a learning curve, is [**Dra
 
 Finally, [**LucidChart**](https://lucidchart.com) is a commercial tool for drawing all UML charts. You can also have a free trial for the software. It is a very versatile tool, and quite used in the industry. 
 
-[**You can find the exercises here**](/exercises/#part-1)
+[**You can find the exercises here**](/design-and-documentation/exercises/#part-1)
