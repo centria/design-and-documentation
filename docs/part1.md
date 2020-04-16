@@ -15,10 +15,11 @@ Next we will get familiar with creating and reading class diagrams using [**UML*
 
 ## Describing class and class attributes
 
-First we will describe one class and its attributes. Below is the source code for a class called Person which has two class attributes name and age.
+First we will describe one class and its attributes. Below is the source code for a class called **Person** which has two class attributes name and age.
 
 ```cs
-public class Person {
+public class Person 
+{
   private string name;
   private int age;
 }
@@ -26,7 +27,7 @@ public class Person {
 
 In a class diagram a class is represented by a rectangle with the name of the class written on top. A line below the name of the class divides the name from the list of attributes (names and types of the class variables). The attributes are written one attribute per line.
 
-In a class diagram, class attributes are written "attributeName: attributeType". + before the attribute name means the attribute is public, and - the attribute is private.
+In a class diagram, class attributes are written *"attributeName: attributeType".* **+ before the attribute name means the attribute is public, and - the attribute is private.**
 
 ![Person with name and age](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/classdiagram-person-name-age.png)
 
@@ -35,15 +36,52 @@ In a class diagram, class attributes are written "attributeName: attributeType".
 Below we have the source code for a constructor for our Person class. The constructor gets the name of the person as a parameter.
 
 ```cs
-public class Person {
+public class Person 
+{
   private string name;
   private int age;
 
-  public Person(string initialName) {
-      this.name = initialName;
-      this.age = 0;
+  public Person(string initialName) 
+  {
+    this.name = initialName;
+    this.age = 0;
   }
 }
 ```
 
+In a class diagram we list the constructor (and all other methods) below the attributes. A line below the attributes list separates it from the method list. Methods are written +/- (debending on the visibility of the method), method name, parameters and their types. The constructor above is written **+Person(initialName:string)**
+
+The parameters are written the same way class attributes were, *"parameterName: parameterType"*.
+
 ![Person with name, age and constructor](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/classdiagram-person-name-age-constructor.png)
+
+## Describing class methods
+
+Below we have added a method **PrintPerson()** which returns void to the Person class.
+
+```cs
+public class Person 
+{
+  private string name;
+  private int age;
+
+  public Person(string initialName) 
+  {
+    this.name = initialName;
+    this.age = 0;
+  }
+
+  public void PrintPerson() 
+  {
+    Console.WriteLine(this.name + ", age " +   this.age + " years");
+  }
+}
+```
+
+In a class diagram we list all class methods with the constructors -- constructors are listed first and then all class methods. We also write the return type of a method to the class diagram.
+
+![Person with name, age, constructor and print](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/classdiagram-person-name-age-constructor-print.png)
+
+A class diagram describes classes and their attributes, constructors and methods as well as the connections between classes. However a class diagram tells us nothing about the implementation of the constructors or the methods. Therefore a class diagram describes the structure of an object but not its functionality.
+
+For example the method PrintPerson uses the class attributes name and age, but this cannot be seen from the class diagram.
