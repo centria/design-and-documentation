@@ -1,8 +1,8 @@
 ---
 title: "Part 5"
 permalink: /part5/
-nav_order: 6
-published: true
+nav_order: 5
+published: false
 ---
 
 ## Part 5
