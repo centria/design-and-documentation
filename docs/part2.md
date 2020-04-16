@@ -1,5 +1,5 @@
 ---
-title: "Part 2"
+title: "Part 2 - Sequence Diagrams"
 permalink: /part2/
 nav_order: 2
 published: false
