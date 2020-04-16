@@ -15,7 +15,7 @@ published: true
 
 * You can use any of the tools mentioned in the material.
 
-#### Exercise 1
+### Exercise 1
 
 * Draw a class diagram that represents the following code, and save it in your return document:
 
@@ -32,7 +32,7 @@ public class Person
 }
 ```
 
-#### Exercise 2
+### Exercise 2
 
 * Draw a class diagram that represents the following code, and save it in your return document, *as another picture*:
 
@@ -60,7 +60,7 @@ public class Person
 }
 ```
 
-#### Exercise 3
+### Exercise 3
 
 * Draw a class diagram that represents the following code, and save it in your return document, *as another picture*:
 
@@ -98,7 +98,7 @@ public class ClockHand
 }
 ```
 
-#### Exercise 4
+### Exercise 4
 
 * Draw a class diagram that represents the following code, and save it in your return document, *as another picture*.
 
@@ -140,7 +140,7 @@ public class Clock
 }
 ```
 
-#### Exercise 5
+### Exercise 5
 
 * Draw a class diagram that represents the following code, with relations, and save it in your return document, *as another picture*.
 
