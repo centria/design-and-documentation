@@ -120,3 +120,29 @@ public class Book
 In a class diagram variables which refer to other objects are not written with the rest of the class attributes, but are shown as connections between the classes. In the class diagram below we have the classes Person and Book, and the connection between them.
 
 ![Book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/class-diagram-book-person-relation.png)
+
+Class methods are described just like we did before. Below we have added methods **GetAuthors** and **AddAuthor** to the Book class.
+
+```cs
+public class Book 
+{
+  private string name;
+  private string publisher;
+  private List<Person> authors;
+
+  // constructor would be here
+
+
+  public List<Person> GetAuthors() 
+  {
+      return this.authors;
+  }
+
+  public void AddAuthor(Person author) 
+  {
+    this.authors.Add(author);
+  }
+}
+```
+
+![Book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/book-with-many-authors.png)
