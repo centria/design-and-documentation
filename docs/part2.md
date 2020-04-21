@@ -1,5 +1,5 @@
 ---
-title: "Part 2 - ER and Sequence Diagrams"
+title: "Part 2 - ER Models and Sequence Diagrams"
 permalink: /part2/
 nav_order: 2
 published: true
