@@ -76,7 +76,7 @@ In the diagram, we notice some notation we have not yet used. Let's take a quick
 
 * Now, as the Character is weak, the attribute **CharName** is underlined with a dotted line, but is still the most identifying feature of said entity.
 
-* In the entity Region, we have one more type of notation, a dotted outer line, with attribute **PlayersIn**. This means derived attribute. For example, the entity Region does not have the attribute 
+* In the entity Region, we have one more type of notation, a dotted outer line, with attribute **PlayersIn**. This means *derived attribute*. For example, the entity Region does not have the attribute as such, but could be derived from the locations of the players' characters.
 
 
 
