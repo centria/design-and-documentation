@@ -7,15 +7,37 @@ published: true
 
 # ER Diagrams
 
-An entity-relationship model describes interralated items of interest in a specific domain. A basic ER model is composed of entity types and specifies relationships between those entities. In software engineering, the ER model can be used to describe for example business models, but also data models or software structures.
+An **entity-relationship model** describes interralated items of interest in a specific domain. A basic ER model is composed of entity types and specifies relationships between those entities. In software engineering, the ER model can be used to describe for example business models, but also data models or software structures.
 
-ER models are not part of the UML standard, but are still quite often used. They are used for example conceptualizing a software, before actually implementing said software. Let us use one of our previous class diagrams as an example, and change that into an ER diagram.
+ER models are not part of the UML standard, but are still quite often used. They are used for example conceptualizing a software, before actually implementing said software. According to their name, the ER diagrams **DO NOT** describe the inner functions of entities, but merely the relations between them.
+
+Let us use one of our previous class diagrams as an example, and change that into an ER diagram.
 
 ![Person with name and age](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/classdiagram-person-name-age.png)
 
 Starting off small, let us have the class "Person" as an ER diagram.
 
 ![ER Person with name and age](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/er_person.png)
+
+In our diagram, we have an **Entity** called **Person**, described with a rectungular shape. The Entity has two **Attributes**, described with elliptical shapes.
+
+For a more complex example, let's use
+
+![Book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part1/class-diagram-book-person-relation.png)
+
+
+![ER Person writes book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/er_person_book.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
