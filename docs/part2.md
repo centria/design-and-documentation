@@ -121,17 +121,57 @@ class Program
 }
 ```
 
-In our Person class, we have a constructor with a single parameter, as well as a method PrintPerson. In our Main class, we create two persons, and call their PrintPerson methods. Let's put that into a sequence diagram:
+In our Person class, we have a constructor with a single parameter, as well as a method PrintPerson. In our Program class, we create two persons, and call their PrintPerson methods. Let's put that into a sequence diagram:
 
-![Sequence diagram for persons](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/sequence1.png)
+![Sequence diagram for persons](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/sequence1.jpg)
 
+(This diagram was made with [**Draw.io**](https://draw.io).)
 
+In our diagram we see the **Main** calls for the object **Ada** with the line **new Person("Ada");**. 
 
+* As the arrow is pointing to the **Actor**'s name, we know it is a creation command. Indicating creation is not always necessary in Sequence diagrams, but if you want to emphasize the creation, this is the notation for it.
 
+* The next arrow does the same, but this time for our Actor Antti.
 
+* Next we call the Actor Ada, with the method **PrintPerson()**. Notice, that since it is that object's method, we do not add the object name in front of the command.
 
+* The block which begins from the arrow, is called **lifeline**. This indicates a timeline inside the object, from which we return to the calling actor.
 
+* In the lifeline, we have a **self message**. This means that something is being processed in the class itself. This time, it is our method with **void** as a return value, i.e. the call from the main triggers the method to do something.
 
+* After the self message is over, we use a dotted line to **return** to the main.
+
+* We repeat this process with the other actor, as well.
+
+Sequence diagrams can be used to clarify, what happens between classes and objects, where do the calls go, and what do they trigger. Let's take a look of a different example:
+
+```cs
+public static void Main(string[] args)
+  {
+    ReadNumber();
+  }
+
+public static int ReadNumber()
+{
+  while (true)
+  {
+    Console.Write("Give a number: ");
+    try
+    {
+      int readNumber = Convert.ToInt32(Console.ReadLine());
+      return readNumber;
+    }
+    catch (Exception e)
+    {
+      Console.WriteLine(e.Message);
+    }
+  }
+}
+```
+
+Now we have a **Main** method, and **ReadNumber** method. Technically, this could all be done as **self messages** as they are both part of the same Project class, but for clarity's sake, let's handle them as separate actors.
+
+![Sequence diagram for readnumber](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/sequence_loop.png)
 
 
 
