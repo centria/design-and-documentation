@@ -19,7 +19,7 @@ Starting off small, let us have the class "Person" as an ER diagram.
 
 ![ER Person with name and age](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/er_person.png)
 
-In our diagram, we have an **Entity** called **Person**, described with a rectungular shape. The Entity has two **Attributes**, described with elliptical shapes. The entity name, as well as the attributes, are written as **singular nouns**.
+In our diagram, we have an **Entity** called **Person**, described with a *rectungular* shape. The Entity has two **Attributes**, described with *elliptical* shapes. The entity name, as well as the attributes, are written as **singular nouns**.
 
 For a more complex example, let's use
 
@@ -28,7 +28,7 @@ For a more complex example, let's use
 
 ![ER Person writes book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/er_person_book.png)
 
-Now we can see, that our "author" has changed to "writes". The relationship between the two is still the same, but in ER, the relationships are written as **verbs**. These are read from left to right, as in "Person writes a book".
+In our diagram, the relationship between entities is in the middle, marked with a *diamond* shape. Now we can see, that our "author" has changed to "writes". The relationship between the two is still the same, but in ER, the relationships are written as **verbs**. This example is now read from left to right, as in "Person writes a book". The relation can also be drawn other way around, but let's keep this simple.
 
 Just like in class diagrams, ER diagrams can also used to describe cardinalities. Let's take our Book and Person, but now with more than one relationship:
 
@@ -54,16 +54,29 @@ public class Book
 }
 ```
 
-As our book now has *0..N* (zero or more) authors, we want to indicate this in our ER, as well. To do this, there are multiple notations. We are now using [**Crow's foot notation**](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model):
+As our book now has *0..N* (zero or more) authors, we want to indicate this in our ER, as well. To do this, there are multiple different notations. We are now using [**Crow's foot notation**](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model#Crow's_foot_notation):
 
 
 ![ER Person writes book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/er_persons_books.png)
 
+Now in our diagram, "many persons write one book". It is noticeable, that in the crow's foot notation, the relationship diamond is not compulsory, but for example the tool we use, does it automatically. As ER is not as standardized as for example UML, mixing notations is more easily forgiven.
 
+With ER charts, we can create quite complex, yet understandable diagrams. For example, here is an ER diagram, depicting a MMORPG:
 
+![MMORPG](https://upload.wikimedia.org/wikipedia/commons/7/72/ER_Diagram_MMORPG.png)
+Source and license information for the picture: [https://commons.wikimedia.org/wiki/File:ER_Diagram_MMORPG.png](https://commons.wikimedia.org/wiki/File:ER_Diagram_MMORPG.png)
 
+In the diagram, we notice some notation we have not yet used. Let's take a quick look of them
 
+* Underscore means it is a unique attribute, e.g. no two entities have the same value for said attribute. In the example, *AcctName* of entity **Account** is unique.
 
+* The relationship between Account and Character, **Has**, has double outer lines. This means it is an *identifying relationship*.
+
+* The entity **Character** has similar double lines, meaning now it is a *weak* entity. This means, that it cannot be identified by its attributes alone, e.g. two characters could be 100% identical.
+
+* Now, as the Character is weak, the attribute **CharName** is underlined with a dotted line, but is still the most identifying feature of said entity.
+
+* In the entity Region, we have one more type of notation, a dotted outer line, with attribute **PlayersIn**. This means derived attribute. For example, the entity Region does not have the attribute 
 
 
 
