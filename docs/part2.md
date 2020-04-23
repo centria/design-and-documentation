@@ -19,7 +19,7 @@ Starting off small, let us have the class "Person" as an ER diagram.
 
 ![ER Person with name and age](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/er_person.png)
 
-In our diagram, we have an **Entity** called **Person**, described with a rectungular shape. The Entity has two **Attributes**, described with elliptical shapes.
+In our diagram, we have an **Entity** called **Person**, described with a rectungular shape. The Entity has two **Attributes**, described with elliptical shapes. The entity name, as well as the attributes, are written as **singular nouns**.
 
 For a more complex example, let's use
 
@@ -28,11 +28,36 @@ For a more complex example, let's use
 
 ![ER Person writes book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/er_person_book.png)
 
+Now we can see, that our "author" has changed to "writes". The relationship between the two is still the same, but in ER, the relationships are written as **verbs**. These are read from left to right, as in "Person writes a book".
+
+Just like in class diagrams, ER diagrams can also used to describe cardinalities. Let's take our Book and Person, but now with more than one relationship:
+
+```cs
+public class Book 
+{
+  private string name;
+  private string publisher;
+  private List<Person> authors;
+
+  // constructor would be here
 
 
+  public List<Person> GetAuthors() 
+  {
+      return this.authors;
+  }
+
+  public void AddAuthor(Person author) 
+  {
+    this.authors.Add(author);
+  }
+}
+```
+
+As our book now has *0..N* (zero or more) authors, we want to indicate this in our ER, as well. To do this, there are multiple notations. We are now using [**Crow's foot notation**](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model):
 
 
-
+![ER Person writes book](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/er_persons_books.png)
 
 
 
