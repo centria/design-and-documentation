@@ -173,9 +173,34 @@ Now we have a **Main** method, and **ReadNumber** method. Technically, this coul
 
 ![Sequence diagram for readnumber](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/sequence_loop.png)
 
+This diagram was created with [**https://sequencediagram.org/**](https://sequencediagram.org/).
+
+In this diagram... 
+
+* Our Main calls the ReadNumber with the first arrow. 
+* The lifeline of ReadNumber is activated.
+* We begin our loop, and the condition is **while(true)**
+* In the loop, we call the **Console.ReadLine**. You could make the Console an actor of its own, but having common print actions as self messages is quite fine for our detail level.
+* Next down, we have a note, telling what happens in the code. As all the code is not reasonable to sequence out, we can use notes to simplify the diagram, yet give more information.
+* Next we have our break condition. As the loop breaks if **readNumber is an integer**, we give that information in the diagram.
+* Now we **return** the value of our variable **readNumber** to our main, just like our method returns it.
+* With the return, we deactivate the lifeline for ReadNumber.
+
+Sequence diagrams are an easy and fast way to make yourself comprehend, what actually happens inside your code. They are not the only way to describe these events, but more on that later.
+
+## Tools of the trade
+
+The diagrams in this page were done with the following tools:
+
+* *[**https://erdplus.com/standalone**](https://erdplus.com/standalone) was used for the ER diagrams. The tool gives ready made buttons from which to select entities, and they are easy to modify within the tool itself.
+
+* [**Draw.io**](https://draw.io) is a all-around drawing tool, where you can create multiple different kinds of diagrams. It might take a while to learn how to get everything point in the correct direction, but once mastered, an uncanny tool for documentation.
+
+* [**https://sequencediagram.org/**](https://sequencediagram.org/), an easy but versatile tool for creating sequence diagrams. You can create diagrams by code or through the graphical user interface. Notice, that this tool does not, how ever, have all the available options, such as creation arrows.
+
+* If you are already more familiar with other tools, of prefer for example [**LucidChart**](https://lucidchart.com/), you are more than welcome to use your tools of choice.
 
 
+[**You can find the exercises here**](/design-and-documentation/exercises/#part-2)
 
 
-
-You can create Sequence diagrams with for example [**https://sequencediagram.org/**](https://sequencediagram.org/).
