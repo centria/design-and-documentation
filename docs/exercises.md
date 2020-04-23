@@ -287,10 +287,203 @@ public class Packer
 
 * Return these exercises as an email, by 5.5.2020 at 23:59:59. Create **one** PDF (or docs or something, preferably pdf), where you have all the answers. **ONLY ONE FILE IS ACCEPTED AS RETURN!**
 
-* In the end, you should have **one document**.
-
-* You can create Sequence diagrams with for example [**https://sequencediagram.org/**](https://sequencediagram.org/).
+* In the end, you should have **one document** with **four diagrams**.
 
 * You can create ER diagrams with for example [**https://erdplus.com/standalone**](https://erdplus.com/standalone).
 
+* You can create Sequence diagrams with for example [**https://sequencediagram.org/**](https://sequencediagram.org/).
+
+* You can create Sequence diagrams with for example [**https://draw.io**](https://draw.io)
+
+* If you feel more comfortable with other tools, you are welcome to use those as well, these are only examples.
+
 ### Exercise 1
+
+Draw an ER diagram for the following class:
+
+```cs
+public class Person
+{
+  private string name;
+  private int age;
+
+  public Person(string initialName)
+  {
+    this.age = 0;
+    this.name = initialName;
+  }
+
+  public void PrintPerson()
+  {
+    Console.WriteLine(this.name + ", age " + this.age + " years");
+  }
+
+  public void GrowOlder()
+  {
+    this.age = this.age + 1;
+  }
+}
+```
+
+
+### Exercise 2
+
+Create an ER diagram for the following classes: 
+
+```cs
+public class ClockHand
+{
+  public int value { get; set; }
+  public int limit { get; set; }
+
+  public ClockHand(int limit)
+  {
+    this.limit = limit;
+    this.value = 0;
+  }
+
+  public void Advance()
+  {
+    this.value = this.value + 1;
+
+    if (this.value >= this.limit)
+    {
+      this.value = 0;
+    }
+  }
+
+  public override string ToString()
+  {
+    if (this.value < 10)
+    {
+      return "0" + this.value;
+    }
+
+    return "" + this.value;
+  }
+}
+```
+
+```cs
+public class Clock
+{
+  private ClockHand hours;
+  private ClockHand minutes;
+  private ClockHand seconds;
+
+  public Clock()
+  {
+    this.hours = new ClockHand(24);
+    this.minutes = new ClockHand(60);
+    this.seconds = new ClockHand(60);
+  }
+
+  public void Advance()
+  {
+    this.seconds.Advance();
+
+    if (this.seconds.value == 0)
+    {
+      this.minutes.Advance();
+
+      if (this.minutes.value == 0)
+      {
+        this.hours.Advance();
+      }
+    }
+  }
+
+  public override string ToString()
+  {
+    return hours + ":" + minutes + ":" + seconds;
+  }
+}
+```
+
+Remember to put in the relation!
+
+### Exercise 3
+
+Consider the **Clock** and **ClockHand** above. Using this Main:
+
+```cs
+static void Main(string[] args)
+{
+  Clock clock = new Clock();
+
+  while (true)
+  {
+    Console.WriteLine(clock);
+    clock.Advance();
+  }
+}
+```
+
+Create a sequence diagram.
+
+NOTICE! This will create an endless loop, so your loop does not have a break point.
+
+### Exercise 4
+
+Consider the following code:
+
+```cs
+using System;
+
+public class Account 
+{
+  public double balance { get; set; }
+  private string owner;
+
+  public Account(string owner, double balance) 
+  {
+      this.balance = balance;
+      this.owner = owner;
+  }
+
+  public void Deposit(double amount) 
+  {
+      this.balance = this.balance + amount;
+  }
+
+  public void Withdrawal(double amount) 
+  {
+      this.balance = this.balance - amount;
+  }
+
+  public override string ToString()
+  {
+    return this.owner + " balance: " + this.balance;
+  }
+}
+```
+
+Code in the Main:
+
+```cs
+using System;
+
+class Program
+{
+  public static void Main(string[] args)
+  {
+    Account heikkisAccount = new Account("Heikki's account", 100.00);
+    Account heikkisSwissAccount = new Account("Heikki's account in Switzerland", 1000000.00);
+
+    Console.WriteLine("Intial state");
+    Console.WriteLine(heikkisAccount);
+    Console.WriteLine(heikkisSwissAccount);
+
+    heikkisAccount.Withdrawal(20);
+    Console.WriteLine("The balance of Heikki's account is now: " + heikkisAccount.balance);
+    heikkisSwissAccount.Deposit(200);
+    Console.WriteLine("The balance of Heikki's other account is now: " + heikkisSwissAccount.balance);
+
+    Console.WriteLine("End state");
+    Console.WriteLine(heikkisAccount);
+    Console.WriteLine(heikkisSwissAccount);
+  }
+}
+```
+
+Draw a sequence diagram of what happens in the main.

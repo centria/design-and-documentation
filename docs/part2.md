@@ -80,11 +80,8 @@ In the diagram, we notice some notation we have not yet used. Let's take a quick
 
 As you can see, ER diagrams are quite the versatile tool for describing information, but require some background knowledge, how the diagrams work.
 
-## How to draw ER diagrams
+It is also notable, that ER diagrams are not designed for describing classes and their functionality, but rather the bigger picture, or databases. We will, how ever, break this rule this time, and rehearse using them with some classes in our exercises.
 
-For the exercises (and otherwise), you can create ER diagrams with for example [**https://erdplus.com/standalone**](https://erdplus.com/standalone). The tool gives ready made buttons from which to select entities, and they are easy to modify within the tool itself. The diagrams in these materials are made with this tool.
-
-If you are familiar with other tools, of prefer for example [**LucidChart**](https://lucidchart.com/), you are more than welcome to use your tool of choice.
 
 # Sequence Diagrams
 
