@@ -78,9 +78,9 @@ In the diagram, we notice some notation we have not yet used. Let's take a quick
 
 * In the entity Region, we have one more type of notation, a dotted outer line, with attribute **PlayersIn**. This means *derived attribute*. For example, the entity Region does not have the attribute as such, but could be derived from the locations of the players' characters.
 
+As you can see, ER diagrams are quite the versatile tool for describing information, but require some background knowledge, how the diagrams work.
 
-
-You can create ER diagrams with for example [**https://erdplus.com/standalone**](https://erdplus.com/standalone).
+For the exercises (and otherwise), you can create ER diagrams with for example [**https://erdplus.com/standalone**](https://erdplus.com/standalone).
 
 # Sequence Diagrams
 
