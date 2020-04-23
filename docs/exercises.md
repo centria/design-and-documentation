@@ -282,3 +282,15 @@ public class Packer
   }
 }
 ```
+
+## Part 2
+
+* Return these exercises as an email, by 5.5.2020 at 23:59:59. Create **one** PDF (or docs or something, preferably pdf), where you have all the answers. **ONLY ONE FILE IS ACCEPTED AS RETURN!**
+
+* In the end, you should have **one document**.
+
+* You can create Sequence diagrams with for example [**https://sequencediagram.org/**](https://sequencediagram.org/).
+
+* You can create ER diagrams with for example [**https://erdplus.com/standalone**](https://erdplus.com/standalone).
+
+### Exercise 1
