@@ -80,10 +80,62 @@ In the diagram, we notice some notation we have not yet used. Let's take a quick
 
 As you can see, ER diagrams are quite the versatile tool for describing information, but require some background knowledge, how the diagrams work.
 
-For the exercises (and otherwise), you can create ER diagrams with for example [**https://erdplus.com/standalone**](https://erdplus.com/standalone).
+## How to draw ER diagrams
+
+For the exercises (and otherwise), you can create ER diagrams with for example [**https://erdplus.com/standalone**](https://erdplus.com/standalone). The tool gives ready made buttons from which to select entities, and they are easy to modify within the tool itself. The diagrams in these materials are made with this tool.
+
+If you are familiar with other tools, of prefer for example [**LucidChart**](https://lucidchart.com/), you are more than welcome to use your tool of choice.
 
 # Sequence Diagrams
 
-Here will be even more.
+Now we know how we can describe our software's structure. But what does the software actually do, and how? Let's take a look. For this, we need a program which actually does something. Luckily, we have used some in our Basics in Programming course. Let's bring a Person class and a Main here now:
+
+```cs
+public class Person
+{
+  private string name;
+  private int age;
+
+  public Person(string initialName) {
+    this.age = 0;
+    this.name =  initialName;
+  }
+
+  public void PrintPerson() {
+    Console.WriteLine(this.name + ", age " + this.age + " years");
+  }
+}
+```
+
+```cs
+class Program
+{
+  static void Main(string[] args)
+  {
+    Person ada = new Person("Ada");
+    Person antti = new Person("Antti");
+
+    ada.PrintPerson();
+    antti.PrintPerson();
+  }
+}
+```
+
+In our Person class, we have a constructor with a single parameter, as well as a method PrintPerson. In our Main class, we create two persons, and call their PrintPerson methods. Let's put that into a sequence diagram:
+
+![Sequence diagram for persons](https://github.com/centria/design-and-documentation/raw/master/assets/images/part2/sequence1.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 You can create Sequence diagrams with for example [**https://sequencediagram.org/**](https://sequencediagram.org/).
