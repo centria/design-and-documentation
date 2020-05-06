@@ -45,9 +45,13 @@ With these, we can create even static web page. Let's start with a little less a
 <p>This is a <b>bold</b> and <i>recursive</i> sentence.</p>
 ```
 
-If we take this into a file and open in it oor web browser, we will get a view like this:
+If we take this into a file and open in it our web browser, we will get a view like this:
 
 ![First html](https://github.com/centria/design-and-documentation/raw/master/assets/images/part3/html.jpg)
+
+Now you might be wondering, *"what does a web page have to do with documentation or design?"* and that is a good question. The answer, in short, is *"nothing and everything"*. Most of our documentation is nowadays online, and we want our documentation to look decent, and not just a wall of text. Take this course page, for example. This was written in another markup language, and it has then been translated into HTML.
+
+We do not have to go deeper into HTML this time. A quick summary for HTML is still in order: You could say, that all webpages use HTML for their user presentation. Most likely, most of the page is written in some other language, but the view you are looking at, is done in HTML.
 
 ## MarkDown
 
