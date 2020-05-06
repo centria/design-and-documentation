@@ -113,11 +113,33 @@ For this reason, we want to know of MarkDown. Probably the best cheatsheet for M
 
 It contains all the crucial information, how MarkDown is properly written. Let's take a look at the few, most important parts.
 
-* **#** the pound sign (or as it nowadays known, the hashtag) creates a header. With one character, you can create the largest header (h1 in HTML), with two the second largest (h2), and so on.
+* **#** the pound sign (or as it nowadays known, the hashtag) creates a header. With one character, you can create the largest header (h1 in HTML), with two the second largest (h2), and so on. With the following code:
+
+```md
+## This is a header
+```
+
+We get
+
+## This is a header
 
 * With stars **\***, you can do several things: Adding two starts before and after a sentence, you can make text **bold**. The following part \*\*would be bold\*\* in MD. With one star, \*, you can create *italics*. So \*this would be in italics\*.
 
+```md
+**This text is bold**  
+*This is slanted*  
+```
+
+**This text is bold**  
+*This is slanted*  
+
 * To create a list (like this), you can also use a star. This time, have the star at the beginning of a line, and a space after it.
+
+```md
+* To create a list (like this)...
+```
+
+* To create a list (like this)...
 
 * To create an ordered list, have a number with a dot in the beginning. So for example, we could create list with
 
@@ -163,5 +185,11 @@ This will create a HTML like this:
 Source: [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 * To create a link, we want to use \[link name here\]\(https://actuallink.com\) square brackets, followed by regular brackets. The first one is the text shown to the viewer, and the latter is where the link actually takes us.
+
+```md
+This will create a link: [Google.com](https://google.com)
+```
+
+This will create a link: [Google.com](https://google.com)
 
 Markdown is a very versatile markup language, that can be used for various places. Did I already mention, that all the course pages are also written in MD? You can see the example from example here: [**https://raw.githubusercontent.com/centria/design-and-documentation/master/docs/part3.md**](https://raw.githubusercontent.com/centria/design-and-documentation/master/docs/part3.md)
