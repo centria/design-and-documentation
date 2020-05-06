@@ -51,7 +51,7 @@ If we take this into a file and open in it our web browser, we will get a view l
 
 Now you might be wondering, *"what does a web page have to do with documentation or design?"* and that is a good question. The answer, in short, is *"nothing and everything"*. Most of our documentation is nowadays online, and we want our documentation to look decent, and not just a wall of text. Take this course page, for example. This was written in another markup language, and it has then been translated into HTML.
 
-We do not have to go deeper into HTML this time. A quick summary for HTML is still in order: You could say, that all webpages use HTML for their user presentation. Most likely, most of the page is written in some other language, but the view you are looking at, is done in HTML.
+We do not have to go deeper into HTML this time as we will look into in in the fall. A quick summary for HTML is still in order: You could say, that all webpages use HTML for their user presentation. Most likely, most of the page is written in some other language, but the view you are looking at, is done in HTML.
 
 
 ## XML and YAML
@@ -98,6 +98,7 @@ An example of XML you can find here:
 Here we have tags, just like in HTML, which have an opening and closing.
 
 Just like HTML, we do not have to go deeper into these languages at this time, you will learn them as you use them. Most of the markup languages are quite straight forward, and resemble each other greatly. It is important, how ever, to know of their existance, and about the multitude of uses for them.
+
 
 ## MarkDown
 
@@ -199,5 +200,31 @@ Markdown is a very versatile markup language, that can be used for various place
 You can see the HTML representation of the code right on this page. Another interpretation can be found also in GitHub, as it also translates all the MD files into HTML:
 [**https://github.com/centria/design-and-documentation/blob/master/docs/part3.md**](https://github.com/centria/design-and-documentation/blob/master/docs/part3.md)
 
+## LaTeX
+
+*LaTeX (/ˈlɑːtɛx/ LAH-tekh or /ˈleɪtɛx/ LAY-tekh)* is a document preparation system, which uses markup tagging conventions. It is not a markup language as such, but behaves like one. This system is used widely in natural sciences to produce publications and other scientific documents.
+
+We can go and see an example here:
+[**https://en.wikipedia.org/wiki/LaTeX#Example**](https://en.wikipedia.org/wiki/LaTeX#Example)
+
+With LaTex, you can create complex formulas which have the correct indentation, spacing and notation. This system does, how ever, require quite a bit of learning to be used efficiently. Once mastered, LaTex is a handy tool for creating larger publications, such as thesis work.
+
+We will (probably) not be using LaTeX in any of our courses, but once again, a noteworthy system to be aware of.
+
+## Tools of the trade
+
+* You can write HTML in any editor you like. Visual Studio Code, for example, has support for it: [**https://code.visualstudio.com/docs/languages/html**](https://code.visualstudio.com/docs/languages/html)
+
+* You can write MD in any editor you like. You can get a Markdown Preview plugin for VSC, where you can see your code turn into HTML in real time. There are several available, I use [**https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced**](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+
+* Another great tool is [**https://markdownlivepreview.com/**](https://markdownlivepreview.com/), which does basically the same thing: You can see your md transform in real time.
+
+* For LaTeX, one of the most popular tools is [**https://www.overleaf.com/**](https://www.overleaf.com/). You can see your document in rich text in real time, you can integrate git to your project for backup, and you can import or export projects. Nowadays, you can even do some rich text editing, and it will turn into LaTeX code for you.
+
+* For creating mathemathical formulas in LaTex, I recommend [**https://www.codecogs.com/latex/eqneditor.php**](https://www.codecogs.com/latex/eqneditor.php). You can point and click the items you want, and the tool will transform it into code, as well as give you a preview.
+
+* For quite any markup language, you can try [**https://jsonformatter.org/**](https://jsonformatter.org/). If you scroll down, you will se a menu with JSON, HTML, XML and YAML and tools for them, along with some other tools.
+
+* Once again, if you are familiar with any other tool you can use the tools you like, or especially, *if you have a tool recommendation*, do let me know, and I'll add it to the list!
 
 [**You can find the exercises here**](/design-and-documentation/exercises/#part-3)

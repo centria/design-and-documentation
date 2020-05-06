@@ -299,7 +299,7 @@ public class Packer
 
 ### Exercise 1
 
-Draw an ER diagram for the following class:
+* Draw an ER diagram for the following class:
 
 ```cs
 public class Person
@@ -328,7 +328,7 @@ public class Person
 
 ### Exercise 2
 
-Create an ER diagram for the following classes: 
+* Create an ER diagram for the following classes: 
 
 ```cs
 public class ClockHand
@@ -404,7 +404,7 @@ Remember to put in the relation!
 
 ### Exercise 3
 
-Consider the **Clock** and **ClockHand** above. Using this Main:
+* Consider the **Clock** and **ClockHand** above. Using this Main:
 
 ```cs
 static void Main(string[] args)
@@ -419,13 +419,13 @@ static void Main(string[] args)
 }
 ```
 
-Create a sequence diagram.
+* Create a sequence diagram.
 
 NOTICE! This will create an endless loop, so your loop does not have a break point.
 
 ### Exercise 4
 
-Consider the following code:
+* Consider the following code:
 
 ```cs
 using System;
@@ -458,7 +458,7 @@ public class Account
 }
 ```
 
-Code in the Main:
+* Code in the Main:
 
 ```cs
 using System;
@@ -486,12 +486,63 @@ class Program
 }
 ```
 
-Draw a sequence diagram of what happens in the main.
+* Draw a sequence diagram of what happens in the main.
 
 ## Part 3
 
-* Return these exercises as an email, by 12.5.2020 at 23:59:59. Create **one** PDF (or docs or something, preferably pdf), where you have all the answers. **ONLY ONE FILE IS ACCEPTED AS RETURN!**
+* Return these exercises as an email, by 12.5.2020 at 23:59:59. Create **one** .MD file. **ONLY ONE FILE IS ACCEPTED AS RETURN!** Do not change the format of the file, let it be MD!
 
-* In the end, you should have **one document**.
+* In the end, you should have **one MD file**.
 
 ### Exercise 1
+
+* Create an .MD file (for example, answers.md). Save all your answers for this part in this file.
+* Start with the header *## Exercise 1* in your file
+* Complete the exercises in [**https://www.markdowntutorial.com/**](https://www.markdowntutorial.com/)
+* Copy all the answer-texts into the file for returning the exercise.
+  * You might want to give these some smaller headers for clarity 
+
+### Exercise 2
+
+* In the same file, add a header *## Exercise 2*
+* Search the internet for **at least 2** more markup languages not mentioned in the material or in the example below. They can be from for example the Wikipedia page mentioned in the material.
+* **Using Markdown**, write a short introduction of those languages.
+   * For example, *"**TeX** is a typesetting system (or a "**formatting system**") which was designed and mostly written by Donald Knuth and released in 1978. TeX is popular in academia, especially in mathematics, computer science, economics, engineering, linguistics, physics, statistics, and quantitative psychology. It has largely displaced Unix troff, the other favored formatting system, in many Unix installations which use both for different purposes. It is also used for many other typesetting tasks, especially in the form of **LaTeX**, ConTeXt, and other macro packages."*.
+* Add some highlights to the text to make it more vivid, like above.
+
+### Exercise 3
+
+* In the same file, add a header *## Exercise 3*
+* Add an embedded video from YouTube to your file
+  * You can rickroll me if you want
+* Add your favourite cat/dog/pet/animal picture in the file
+  * Notice! Do not add the picture to your submission, but use the image tags to get the image visible.
+
+### Exercise 4
+
+* In the same file, add a header *## Exercise 4*
+* Add the following code snippet as a code snippet to your file:
+
+```cs
+public class Person
+{
+  private string name;
+  private int age;
+
+  public Person(string initialName)
+  {
+    this.age = 0;
+    this.name = initialName;
+  }
+
+  public void PrintPerson()
+  {
+    Console.WriteLine(this.name + ", age " + this.age + " years");
+  }
+
+  public void GrowOlder()
+  {
+    this.age = this.age + 1;
+  }
+}
+```
