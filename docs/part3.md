@@ -101,7 +101,7 @@ Just like HTML, we do not have to go deeper into these languages at this time, y
 
 ## MarkDown
 
-Unlike previous examples, MarkDown is actually used quite often in documentation for software. One main reason is that the **REAMDE.md** files in *git repositories* are in fact markdown files (md is short for markdown).
+Unlike previous examples, *MarkDown* (MD) is actually used quite often in documentation for software. One main reason is that the **REAMDE.md** files in *git repositories* are in fact markdown files (md is short for markdown). There are several different *flavors* to markdown, which means slight changes to syntax. We are usually using the **GitHub Flavored Markdown (GFM)**.
 
 In most gits (there are more than just GitHub), the first file you notice is the **README.md** file, as it is rendered into more human readable format in the git repository starting page. README history dates back to the first commercial computer programs, which were shipped with a README file with them. The file usually contained all the crucial information, such as how to compile and run the program. 
 
@@ -111,17 +111,19 @@ For this reason, we want to know of MarkDown. Probably the best cheatsheet for M
 
 [**https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet**](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-It contains all the crucial information, how MarkDown is properly written. Let's take a look at the few, most important parts.
+Another excellent comparison between markdown and HTML can be found from here: [**https://en.wikipedia.org/wiki/Markdown#Example**](https://en.wikipedia.org/wiki/Markdown#Example)
+
+These contain all the crucial information, how MarkDown is properly written. Let's take a look at the few, most important parts.
 
 * **#** the pound sign (or as it nowadays known, the hashtag) creates a header. With one character, you can create the largest header (h1 in HTML), with two the second largest (h2), and so on. With the following code:
 
 ```md
-## This is a header
+## This is a header level 2
 ```
 
 We get
 
-## This is a header
+## This is a header level 2
 
 * With stars **\***, you can do several things: Adding two starts before and after a sentence, you can make text **bold**. The following part \*\*would be bold\*\* in MD. With one star, \*, you can create *italics*. So \*this would be in italics\*.
 
