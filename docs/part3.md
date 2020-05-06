@@ -13,7 +13,7 @@ Markup languages are not coding languages, even though they have quite similar f
 
 ## HTML
 
-HTML is often referred to as a programming language, which is technically not true. It is a markup language, describing the structure of a document. HTML comprises a set of elements and tags used to define and show different sections of the document, also giving them specific functionalities. Tags can for example turn a word into a link, make it cursive, or change its size.
+*Hypertext Markup Language* HTML is often referred to as a programming language, which is technically not true. It is a markup language, describing the structure of a document. HTML comprises a set of elements and tags used to define and show different sections of the document, also giving them specific functionalities. Tags can for example turn a word into a link, make it cursive, or change its size.
 
 Here is an example of an HTML element:
 
@@ -53,8 +53,115 @@ Now you might be wondering, *"what does a web page have to do with documentation
 
 We do not have to go deeper into HTML this time. A quick summary for HTML is still in order: You could say, that all webpages use HTML for their user presentation. Most likely, most of the page is written in some other language, but the view you are looking at, is done in HTML.
 
-## MarkDown
 
 ## XML and YAML
 
-## TeX
+Another notheworty markup languages are *Extensible Markup Language* (XML) and *YAML Ain't Markup Language* (YAML). Even though they are not directly used in documentation, they are used in our programs quite often. 
+
+For example, the quite familiar **C# project files**, with the file extension **.csproj**, use *XML* syntax. On the other hand, *YAML* is often used in configuring web pages. This course page uses YAML to determine page order in the navigation bar, and even the address for the subpages.
+
+You can see an example of YAML here:
+[**This web page's source code.**](https://raw.githubusercontent.com/centria/design-and-documentation/master/docs/part3.md) The first few lines, separated with lines from the rest of the code, are a common way of using YAML.
+
+```yaml
+---
+title: "Part 3 - Markup languages"
+permalink: /part3/
+nav_order: 3
+published: true
+---
+```
+
+The content of the YAML, however, depends very much on where it is being used. These lines are meant for the [**Jekyll site generator**](https://jekyllrb.com/), which is used to generate these web pages.
+
+An example of XML you can find here:
+[**.csproj file for exercise_01.**](https://raw.githubusercontent.com/centria/coding-exercises/master/part1/printing/exercise_01/exercise_01.csproj) As you can see, the syntax is quite close to that of HTML:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateProgramFile>false</GenerateProgramFile>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0"/>
+  </ItemGroup>
+
+</Project>
+```
+
+Here we have tags, just like in HTML, which have an opening and closing.
+
+Just like HTML, we do not have to go deeper into these languages at this time, you will learn them as you use them. Most of the markup languages are quite straight forward, and resemble each other greatly. It is important, how ever, to know of their existance, and about the multitude of uses for them.
+
+## MarkDown
+
+Unlike previous examples, MarkDown is actually used quite often in documentation for software. One main reason is that the **REAMDE.md** files in *git repositories* are in fact markdown files (md is short for markdown).
+
+In most gits (there are more than just GitHub), the first file you notice is the **README.md** file, as it is rendered into more human readable format in the git repository starting page. README history dates back to the first commercial computer programs, which were shipped with a README file with them. The file usually contained all the crucial information, such as how to compile and run the program. 
+
+Jumping back to this day, the README.md is the landing information of a repository. It usually holds the most crucial information for a repository, such as if the build is stable, how to install, test and run the code, what are the requirements, and so forth. Quite a lot of documentation can also be put into the README.
+
+For this reason, we want to know of MarkDown. Probably the best cheatsheet for MarkDown is here:
+
+[**https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet**](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+It contains all the crucial information, how MarkDown is properly written. Let's take a look at the few, most important parts.
+
+* **#** the pound sign (or as it nowadays known, the hashtag) creates a header. With one character, you can create the largest header (h1 in HTML), with two the second largest (h2), and so on.
+
+* With stars **\***, you can do several things: Adding two starts before and after a sentence, you can make text **bold**. The following part \*\*would be bold\*\* in MD. With one star, \*, you can create *italics*. So \*this would be in italics\*.
+
+* To create a list (like this), you can also use a star. This time, have the star at the beginning of a line, and a space after it.
+
+* To create an ordered list, have a number with a dot in the beginning. So for example, we could create list with
+
+```md
+1. First ordered list item
+2. Another item
+    * Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+    1. Ordered sub-list
+4. And another item.
+
+   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+   To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
+   Note that this line is separate, but within the same paragraph.  
+   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+```
+
+This will create a HTML like this:
+
+1. First ordered list item
+2. Another item
+    * Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+    1. Ordered sub-list
+4. And another item.
+
+  You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+   To have a line break without a paragraph, you will need to use two trailing spaces.  
+  Note that this line is separate, but within the same paragraph.  
+   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+
+
+Source: [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+* To create a link, we want to use \[link name here\]\(https://actuallink.com\) square brackets, followed by regular brackets. The first one is the text shown to the viewer, and the latter is where the link actually takes us.
+
+Markdown is a very versatile markup language, that can be used for various places. Did I already mention, that all the course pages are also written in MD? You can see the example from example here: [**https://raw.githubusercontent.com/centria/design-and-documentation/master/docs/part3.md**](https://raw.githubusercontent.com/centria/design-and-documentation/master/docs/part3.md)
