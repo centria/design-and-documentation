@@ -25,14 +25,14 @@ Let’s look at the structure of the element. An HTML element is composed of thr
 
 1. The start tag *\<p\>*
 2. The content itself This is a piece of text
-3. The end tag *\<\/p\>*
+3. The end tag *\</p\>*
 
 HTML tags are keywords hidden inside the site, but not shown to the end user by the browser. They define how the browser styles and shows the contents of the document the user is viewing. There are countless different HTML tags, each serving to create specific kinds of elements. We’ll start with the elements used to edit text.
 
-1. *\<h1\>\<\/h1\>*: This tag is used to create heading elements. There are six different heading tags, ranging from h1 to h6. The primary heading is created using the first tag h1. The least important heading is created with h6.
-2. *\<p\>\<\/p\>*: The element created with the tag p contains the body text of the document.
-3. *\<em\>\<\/em\>*: The text inside an element created with the tag em is shown in cursive.
-4. *\<strong\>\<\/strong\>*: The text inside an element created with the tag strong is shown in bold. You can also create elements with \<b\> and \<i\> to show text in bold and cursive respectively.
+1. *\<h1\>\</h1\>*: This tag is used to create heading elements. There are six different heading tags, ranging from h1 to h6. The primary heading is created using the first tag h1. The least important heading is created with h6.
+2. *\<p\>\</p\>*: The element created with the tag p contains the body text of the document.
+3. *\<em\>\</em\>*: The text inside an element created with the tag em is shown in cursive.
+4. *\<strong\>\</strong\>*: The text inside an element created with the tag strong is shown in bold. You can also create elements with \<b\> and \<i\> to show text in bold and cursive respectively.
 
 
 With these, we can create even static web page. Let's start with a little less ambitious project, and have ourselves a piece of code:
