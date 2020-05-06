@@ -487,3 +487,11 @@ class Program
 ```
 
 Draw a sequence diagram of what happens in the main.
+
+## Part 3
+
+* Return these exercises as an email, by 12.5.2020 at 23:59:59. Create **one** PDF (or docs or something, preferably pdf), where you have all the answers. **ONLY ONE FILE IS ACCEPTED AS RETURN!**
+
+* In the end, you should have **one document**.
+
+### Exercise 1

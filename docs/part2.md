@@ -189,7 +189,7 @@ Sequence diagrams are an easy and fast way to make yourself comprehend, what act
 
 The diagrams in this page were done with the following tools:
 
-* *[**https://erdplus.com/standalone**](https://erdplus.com/standalone) was used for the ER diagrams. The tool gives ready made buttons from which to select entities, and they are easy to modify within the tool itself.
+* [**https://erdplus.com/standalone**](https://erdplus.com/standalone) was used for the ER diagrams. The tool gives ready made buttons from which to select entities, and they are easy to modify within the tool itself.
 
 * [**Draw.io**](https://draw.io) is a all-around drawing tool, where you can create multiple different kinds of diagrams. It might take a while to learn how to get everything point in the correct direction, but once mastered, an uncanny tool for documentation.
 
