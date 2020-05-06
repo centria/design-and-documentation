@@ -44,6 +44,11 @@ With these, we can create even static web page. Let's start with a little less a
 
 <p>This is a <b>bold</b> and <i>recursive</i> sentence.</p>
 ```
+
+If we take this into a file and open in it oor web browser, we will get a view like this:
+
+![First html](https://github.com/centria/design-and-documentation/raw/master/assets/images/part3/html.jpg)
+
 ## MarkDown
 
 ## XML and YAML
