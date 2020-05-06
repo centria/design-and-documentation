@@ -193,3 +193,9 @@ This will create a link: [Google.com](https://google.com)
 This will create a link: [Google.com](https://google.com)
 
 Markdown is a very versatile markup language, that can be used for various places. Did I already mention, that all the course pages are also written in MD? You can see the example from example here: [**https://raw.githubusercontent.com/centria/design-and-documentation/master/docs/part3.md**](https://raw.githubusercontent.com/centria/design-and-documentation/master/docs/part3.md)
+
+You can see the HTML representation of the code right on this page. Another interpretation can be found also in GitHub, as it also translates all the MD files into HTML:
+[**https://github.com/centria/design-and-documentation/blob/master/docs/part3.md**](https://github.com/centria/design-and-documentation/blob/master/docs/part3.md)
+
+
+[**You can find the exercises here**](/design-and-documentation/exercises/#part-3)
