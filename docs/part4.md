@@ -9,7 +9,7 @@ published: true
 
 *"Software design is the process by which an agent creates a specification of a software artifact, intended to accomplish goals, using a set of primitive components and subject to constraints. Software design may refer to either 'all the activity involved in conceptualizing, framing, implementing, commissioning, and ultimately modifying complex systems' or 'the activity following requirements specification and before programming, as in a stylized software engineering process.'*
 
-*Software design usually involves problem solving and planning a software solution. This includes both a low-level component and algorithm design and a high-level, architecture design."* [**Wikipedia**](https://en.wikipedia.org/wiki/Software_design)
+*Software design usually involves problem solving and planning a software solution. This includes both a low-level component and algorithm design and a high-level, architecture design."* [*Wikipedia*](https://en.wikipedia.org/wiki/Software_design)
 
 We shall concentrate most on the high-level architecure design on this course. Designing is quite similar to what we have done with our documentation part, except rather than having a software to draw our documentation from, we first do the design on documentation level, after which we implement the actual software.
 
@@ -50,19 +50,19 @@ After we have done this to all our components, we have a pretty clear idea, what
 
 In this step of the software design, we are looking at who is the software for? What platform should it run on? How should it be used? Let's look into these questions briefly.
 
-* **Who is the software for?**
+* *Who is the software for?*
 
 If we keep our *Facebook* example in mind, a short answer would be, "for everyone". But targeting a software for everyone is usually not an option, but we rather have to choose an angle. Originally, Facebook was targeted for Mark Zuckerberg's school and class mates. It evolved from this to be a platform for everyone. We as designers should also keep in mind our target demographic. 
 
 A more suitable target audience could be, for example "individuals persons, who have regular access to internet". This narrows down our demographic by about 90% already, as internet is not as available everywhere, as it is in Finland, for example. Another demographic we ruled out was also "companies". Even though they are a target of *Facebook* as advertisers, the majority demographic is still individual people.
 
-* **What platform should it run on?**
+* *What platform should it run on?*
 
 Nowadays answer to this is also usually "on every platform", as more and more applications are based on web pages, rather than being desktop solutions. Once again, "every platform" is too vague, but we need to narrow it down for our design specification. We are now designing still on system level, which means we have to take into consideration the differences between different types of systems.
 
 "Mobile devices, such as Android and iOS devices" would be a good criteria for a mobile application, and "browsers, such as Chrome and Opera" could be another criteria. The difference is, how ever, that most probably the interface for these two criteria are completely different: It is quite different to write code to run on an Android phone, than to produce a web page.
 
-* **How should it be used?**
+* *How should it be used?*
 
 On system level, this is an important question. For our example, design features such as "touchscreen compatible" are relevant. But let's go away from our Facebook for a while, and have a bit different view.
 
@@ -86,24 +86,24 @@ All these questions should be answered, if possible, during the design process. 
 
 Designing software has few quidelines, or *principles*, which most of the designs follow. These principles are not the universal truth, and there are multiple versions of these, but this is one list, which has been in use since 1990's and has evolved since. They were originated in this book: [201 principles of software development](https://dl.acm.org/doi/book/10.5555/203406) and are also listed here: [Wikipedia](https://en.wikipedia.org/wiki/Software_design#Overview)
 
-* **The design process should not suffer from "tunnel vision."** A good designer should consider alternative approaches, judging each based on the requirements of the problem, the resources available to do the job.
-* **The design should be traceable to the analysis model.** Because a single element of the design model can often be traced back to multiple requirements, it is necessary to have a means for tracking how requirements have been satisfied by the design model.
+* *The design process should not suffer from "tunnel vision."* A good designer should consider alternative approaches, judging each based on the requirements of the problem, the resources available to do the job.
+* *The design should be traceable to the analysis model.* Because a single element of the design model can often be traced back to multiple requirements, it is necessary to have a means for tracking how requirements have been satisfied by the design model.
 
-* **The design should not reinvent the wheel.** Systems are constructed using a set of design patterns, many of which have likely been encountered before. These patterns should always be chosen as an alternative to reinvention. Time is short and resources are limited; design time should be invested in representing (truly new) ideas by integrating patterns that already exist (when applicable).
+* *The design should not reinvent the wheel.* Systems are constructed using a set of design patterns, many of which have likely been encountered before. These patterns should always be chosen as an alternative to reinvention. Time is short and resources are limited; design time should be invested in representing (truly new) ideas by integrating patterns that already exist (when applicable).
 
-* **The design should "minimize the intellectual distance" between the software and the problem as it exists in the real world.** That is, the structure of the software design should, whenever possible, mimic the structure of the problem domain.
+* *The design should "minimize the intellectual distance" between the software and the problem as it exists in the real world.* That is, the structure of the software design should, whenever possible, mimic the structure of the problem domain.
 
-* **The design should exhibit uniformity and integration.** A design is uniform if it appears fully coherent. In order to achieve this outcome, rules of style and format should be defined for a design team before design work begins. A design is integrated if care is taken in defining interfaces between design components.
+* *The design should exhibit uniformity and integration.* A design is uniform if it appears fully coherent. In order to achieve this outcome, rules of style and format should be defined for a design team before design work begins. A design is integrated if care is taken in defining interfaces between design components.
 
-* **The design should be structured to accommodate change.** The design concepts discussed in the next section enable a design to achieve this principle.
+* *The design should be structured to accommodate change.* The design concepts discussed in the next section enable a design to achieve this principle.
 
-* **The design should be structured to degrade gently, even when aberrant data, events, or operating conditions are encountered.** Well-designed software should never "bomb"; it should be designed to accommodate unusual circumstances, and if it must terminate processing, it should do so in a graceful manner.
+* *The design should be structured to degrade gently, even when aberrant data, events, or operating conditions are encountered.* Well-designed software should never "bomb"; it should be designed to accommodate unusual circumstances, and if it must terminate processing, it should do so in a graceful manner.
 
-* **Design is not coding, coding is not design.** Even when detailed procedural designs are created for program components, the level of abstraction of the design model is higher than the source code. The only design decisions made at the coding level should address the small implementation details that enable the procedural design to be coded.
+* *Design is not coding, coding is not design.* Even when detailed procedural designs are created for program components, the level of abstraction of the design model is higher than the source code. The only design decisions made at the coding level should address the small implementation details that enable the procedural design to be coded.
 
-* **The design should be assessed for quality as it is being created, not after the fact.** A variety of design concepts and design measures are available to assist the designer in assessing quality throughout the development process.
+* *The design should be assessed for quality as it is being created, not after the fact.* A variety of design concepts and design measures are available to assist the designer in assessing quality throughout the development process.
 
-* **The design should be reviewed to minimize conceptual (semantic) errors.** There is sometimes a tendency to focus on minutiae when the design is reviewed, missing the forest for the trees. A design team should ensure that major conceptual elements of the design (omissions, ambiguity, inconsistency) have been addressed before worrying about the syntax of the design model.
+* *The design should be reviewed to minimize conceptual (semantic) errors.* There is sometimes a tendency to focus on minutiae when the design is reviewed, missing the forest for the trees. A design team should ensure that major conceptual elements of the design (omissions, ambiguity, inconsistency) have been addressed before worrying about the syntax of the design model.
 
 
 ## Design Concepts
