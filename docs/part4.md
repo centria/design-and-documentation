@@ -132,4 +132,6 @@ From [**Wikipedia**](https://en.wikipedia.org/wiki/Software_design#Design_Concep
 
 ## Design Patterns
 
+When designing a software, we can come across a design problem, which has been solved earlier by someone else. If a problem is a common one, solving it can become a template, or a pattern, describing the solution to the problem. We will look into these patterns deeper in the next part.
 
+[**No exercises, but a placeholder link**](/design-and-documentation/exercises/#part-4)

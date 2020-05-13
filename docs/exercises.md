@@ -546,3 +546,11 @@ public class Person
   }
 }
 ```
+
+## Part 4
+
+No exercises as the next lecture is postponed due to public holiday.
+
+Thematically, parts 4 and 5 are quite close together, so exercises are combined anyways.
+
+## Part 5
