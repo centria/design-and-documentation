@@ -15,6 +15,8 @@ We shall concentrate most on the high-level architecure design on this course. D
 
 In this part, we will have a look at a few key concepts of software design. The aspects of design are not by any means a comprehensive list, and design in itself is a whole part of our industry. It is crucial, however, that you understand at least some of the basics, as design is the driving force in proper software production.
 
+We will look into the process and parts of software design, and what it can consist of, when talking about larger software products. In the simplest form, a software design can be a single chart, which describes the key components and their relations. In this part, how ever, we will be looking at a bit more complex software.
+
 ## Design Process
 
 Design process can be seen as a sequence of steps, where the designer describes all the aspects of the software. There is not a single process guideline which every designer could follow, but the end result should always be the same: a well designed software, which can be implemented as intended, based on said design.
