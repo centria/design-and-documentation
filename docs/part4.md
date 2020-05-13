@@ -108,6 +108,28 @@ Designing software has few quidelines, or *principles*, which most of the design
 
 ## Design Concepts
 
+The design concepts are meant to be used as a foundation, from which the actual design can be derived from. As design has been researched and evolved during the time of software industry, certain set of largely recognized consepts has evolved, as well. They are as follows:
+
+1. Abstraction - Abstraction is the process or result of generalization by reducing the information content of a concept or an observable phenomenon, typically in order to retain only information which is relevant for a particular purpose. It is an act of Representing essential features without including the background details or explanations.
+
+2. Refinement - It is the process of elaboration. A hierarchy is developed by decomposing a macroscopic statement of function in a step-wise fashion until programming language statements are reached. In each step, one or several instructions of a given program are decomposed into more detailed instructions. Abstraction and Refinement are complementary concepts.
+
+3. Modularity - Software architecture is divided into components called modules.
+
+4. Software Architecture - It refers to the overall structure of the software and the ways in which that structure provides conceptual integrity for a system. Good software architecture will yield a good return on investment with respect to the desired outcome of the project, e.g. in terms of performance, quality, schedule and cost.
+
+5. Control Hierarchy - A program structure that represents the organization of a program component and implies a hierarchy of control.
+
+6. Structural Partitioning - The program structure can be divided into both horizontally and vertically. Horizontal partitions define separate branches of modular hierarchy for each major program function. Vertical partitioning suggests that control and work should be distributed top down in the program structure.
+
+7. Data Structure - It is a representation of the logical relationship among individual elements of data.
+
+8. Software Procedure - It focuses on the processing of each module individually.
+
+9. Information Hiding - Modules should be specified and designed so that information contained within a module is inaccessible to other modules that have no need for such information.
+
+From [**Wikipedia**](https://en.wikipedia.org/wiki/Software_design#Design_Concepts)
+
 ## Design Patterns
 
 
