@@ -17,6 +17,33 @@ In this part, we will have a look at a few key concepts of software design. The 
 
 ## Design Process
 
+Design process can be seen as a sequence of steps, where the designer describes all the aspects of the software. There is not a single process guideline which every designer could follow, but the end result should always be the same: a well designed software, which can be implemented as intended, based on said design.
+
+Usually we begin our process with customer requirements, i.e. what is desired of the software. We can see this as the problem setting, and our first step.
+
+* Analyze the problem.
+
+Before we can start anything else for our design, we have to analyze, what is required of the final product. What are the key features of the software, what are the caveats, and so on. Let's follow an example product, let's say a simple webpage, like *Facebook*.
+
+What is required of a *Facebook*? The customer could describe it as a social media platform, where people can connect with each other, message each other directly, tell each other stories on personal or other people's "walls", share pictures, have groups with each other, organize events, sell items... Ok, not really a simple webpage, but a good starting point for our problem.
+
+We should start by taking the problem into small parts, what does the software consist of:
+* Social media platform
+* Ability to connect with other people
+* Messaging application
+* And so on, and so on.
+
+All this should be well documented as part of our design. When we have all the components available, we can start the same process for each component. What is required from for example a *Messaging application*?
+
+* Ability to log in (and out)
+* Contact other people
+  * Contact list?
+* Send and receive messages
+  * Write messages
+* Etc, etc, etc.
+
+After we have done this to all our components, we have a pretty clear idea, what the software should do.
+
 ## Design Principles
 
 ## Design Concepts
