@@ -50,19 +50,19 @@ After we have done this to all our components, we have a pretty clear idea, what
 
 In this step of the software design, we are looking at who is the software for? What platform should it run on? How should it be used? Let's look into these questions briefly.
 
-* Who is the software for?
+* **Who is the software for?**
 
 If we keep our *Facebook* example in mind, a short answer would be, "for everyone". But targeting a software for everyone is usually not an option, but we rather have to choose an angle. Originally, Facebook was targeted for Mark Zuckerberg's school and class mates. It evolved from this to be a platform for everyone. We as designers should also keep in mind our target demographic. 
 
 A more suitable target audience could be, for example "individuals persons, who have regular access to internet". This narrows down our demographic by about 90% already, as internet is not as available everywhere, as it is in Finland, for example. Another demographic we ruled out was also "companies". Even though they are a target of *Facebook* as advertisers, the majority demographic is still individual people.
 
-* What platform should it run on?
+* **What platform should it run on?**
 
 Nowadays answer to this is also usually "on every platform", as more and more applications are based on web pages, rather than being desktop solutions. Once again, "every platform" is too vague, but we need to narrow it down for our design specification. We are now designing still on system level, which means we have to take into consideration the differences between different types of systems.
 
 "Mobile devices, such as Android and iOS devices" would be a good criteria for a mobile application, and "browsers, such as Chrome and Opera" could be another criteria. The difference is, how ever, that most probably the interface for these two criteria are completely different: It is quite different to write code to run on an Android phone, than to produce a web page.
 
-* How should it be used?
+* **How should it be used?**
 
 On system level, this is an important question. For our example, design features such as "touchscreen compatible" are relevant. But let's go away from our Facebook for a while, and have a bit different view.
 
