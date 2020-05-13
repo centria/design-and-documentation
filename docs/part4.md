@@ -13,5 +13,14 @@ published: true
 
 We shall concentrate most on the high-level architecure design on this course. Designing is quite similar to what we have done with our documentation part, except rather than having a software to draw our documentation from, we first do the design on documentation level, after which we implement the actual software.
 
-In this part, we will have a look at a few key concepts of software design, and focus deeper on some of them later on in the course. The aspects of design are not by any means a comprehensive list, and design in itself is a whole part of our industry. It is crucial, however, that you understand at least some of the basics, as design is the driving force in proper software production.
+In this part, we will have a look at a few key concepts of software design. The aspects of design are not by any means a comprehensive list, and design in itself is a whole part of our industry. It is crucial, however, that you understand at least some of the basics, as design is the driving force in proper software production.
+
+## Design Process
+
+## Design Principles
+
+## Design Concepts
+
+## Design Patterns
+
 
