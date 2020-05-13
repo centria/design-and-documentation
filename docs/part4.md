@@ -21,7 +21,7 @@ Design process can be seen as a sequence of steps, where the designer describes 
 
 Usually we begin our process with customer requirements, i.e. what is desired of the software. We can see this as the problem setting, and our first step.
 
-* Analyze the problem.
+### Analyze the problem.
 
 Before we can start anything else for our design, we have to analyze, what is required of the final product. What are the key features of the software, what are the caveats, and so on. Let's follow an example product, let's say a simple webpage, like *Facebook*.
 
@@ -42,7 +42,37 @@ All this should be well documented as part of our design. When we have all the c
   * Write messages
 * Etc, etc, etc.
 
-After we have done this to all our components, we have a pretty clear idea, what the software should do.
+After we have done this to all our components, we have a pretty clear idea, what the software should do. After this, we can move on to our next step.
+
+### Design the system interface.
+
+In this step of the software design, we are looking at who is the software for? What platform should it run on? How should it be used? Let's look into these questions briefly.
+
+* Who is the software for?
+
+If we keep our *Facebook* example in mind, a short answer would be, "for everyone". But targeting a software for everyone is usually not an option, but we rather have to choose an angle. Originally, Facebook was targeted for Mark Zuckerberg's school and class mates. It evolved from this to be a platform for everyone. We as designers should also keep in mind our target demographic. 
+
+A more suitable target audience could be, for example "individuals persons, who have regular access to internet". This narrows down our demographic by about 90% already, as internet is not as available everywhere, as it is in Finland, for example. Another demographic we ruled out was also "companies". Even though they are a target of *Facebook* as advertisers, the majority demographic is still individual people.
+
+* What platform should it run on?
+
+Nowadays answer to this is also usually "on every platform", as more and more applications are based on web pages, rather than being desktop solutions. Once again, "every platform" is too vague, but we need to narrow it down for our design specification. We are now designing still on system level, which means we have to take into consideration the differences between different types of systems.
+
+"Mobile devices, such as Android and iOS devices" would be a good criteria for a mobile application, and "browsers, such as Chrome and Opera" could be another criteria. The difference is, how ever, that most probably the interface for these two criteria are completely different: It is quite different to write code to run on an Android phone, than to produce a web page.
+
+* How should it be used?
+
+On system level, this is an important question. For our example, design features such as "touchscreen compatible" are relevant. But let's go away from our Facebook for a while, and have a bit different view.
+
+On average, a modern car has on estimate 25 to 50 different processing units, or "computers". All of these require software for the car to run smoothly. In this kind of a scenario, the interface becomes quite clear: The software for steering has to be able to handle the steering, and the interface for it is the steering components. At the same time, another software would be handling the headlights, for example.
+
+It is crucial to understand, what kind of software we are designing, and where it is going to be used. If we blindly start creating software without proper documentation, that could end up into a disaster. From this, we get to our next step.
+
+### Design the arcitecture.
+
+Software architecture is the basic blueprint of all the software. It describes the different components of the software on high level, and their relation with each other. It is also used to detail the responsibilities and interactions between the components, and keep track of the interfaces they provide.
+
+Let's get back to Facebook.
 
 ## Design Principles
 
