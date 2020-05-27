@@ -14,7 +14,7 @@ You can compare software architecture to real life building architecture, and yo
 
 There are several levels to software architecture, and in this part we will be looking at a few of them. We shall also examine some architecture styles and patterns of interest.
 
-## Why software architecture?
+## Why Software Architecture?
 
 The idea and reason behind software architecture is to have the fundamentals in place, before we start implementing our software. With proper architecture, we can make better...
 
@@ -27,7 +27,7 @@ The idea and reason behind software architecture is to have the fundamentals in 
 * Risk management
   * "Well designed is halfway done"
 
-## How software architecture?
+## How Software Architecture?
 
 Just like any design, software architecture is a process, which has been refined over the years. At the moment, we could say there are four major steps in architecture design:
 
@@ -65,13 +65,25 @@ Look into (at least):
 
 As you might have noticed, there are quite a few similarities between *architecture patterns* with *design patterns*. We can actually compare them with this handy chart: [**https://en.wikipedia.org/wiki/Architectural_pattern#Examples**](https://en.wikipedia.org/wiki/Architectural_pattern#Examples). Once again, return here once you're done.
 
-## Architecture erosion and recovery
+## Architecture Erosion and Recovery
 
 Not always everything goes as planned, and there is a noticeable difference between the architecture created at the analysis, and the software we have actually implemented. This difference is called *erosion*. The erosion can be caused by not following our architecture to the point, changes in the customer requirements but not doing the architectural evolution, and so on.
 
 To fix our erosion, we have to use *architecture recovery*. This recovery is often done with *reverse engineering*, or examining the software to reconstruct the architecture it has, rather than relying on the one we have documented.
 
+## Architecture Design Documents
 
+When we create architecture designs, we usually start with a very rough scetch, for example to a white board in a meeting with a customer. From that, we develop the next step and start creating the actual architectural documentation. But what kind of documents do we want to produce?
+
+As usual, there is several ways of creating the documentation. One way is to do it with charts, which explain for example the relations (such as ER diagrams) and data flow (flow charts or database charts). On the other hand, we could create lengthy written documentation, covering all the details, entities and their relations... Diagrams start to sound almost interesting at this point.
+
+## Tools of the trade
+
+There are several tools on how to create architecture diagrams. Most of them are not free of charge, but you can also use the familiar tools:
+
+* [**Draw.io**](https://draw.io) is a all-around drawing tool, where you can create multiple different kinds of diagrams. It might take a while to learn how to get everything point in the correct direction, but once mastered, an uncanny tool for documentation. It has built-in specifics for some environments, such as Amazon Web Services (AWS), so building architecture diagrams is quite easy. 
+
+* If you are already more familiar with other tools, of prefer for example [**LucidChart**](https://lucidchart.com/), you are more than welcome to use your tools of choice.
 
 [**You can find the exercises here**](
 https://centria.github.io/design-and-documentation/exercises/#part-5)
