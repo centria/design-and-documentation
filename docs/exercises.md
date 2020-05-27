@@ -551,6 +551,38 @@ public class Person
 
 No exercises as the next lecture is postponed due to public holiday.
 
-Thematically, parts 4 and 5 are quite close together, so exercises are combined anyways.
+Thematically, parts 4 and 5 are quite close together, so exercises are combined anyways. See below.
 
 ## Part 5
+
+* Return these exercises as an email, by 2.6.2020 at 23:59:59. Create **one** PDF (or docs or something, preferably pdf), where you have all the answers. **ONLY ONE FILE IS ACCEPTED AS RETURN!**
+
+* In the end, you should have **one document** of about one to two pages!
+
+### Exercise 1
+
+Examine your [**Software Tools Final Project**](https://centria.github.io/software-tools/part7/). 
+
+* What kind of *design patterns* do you find? Why? 
+
+Find "all" the design patterns you find in your work, and explain, what shows that pattern from your work. For example:
+
+*"In our project, we have single responsibilty principle, as each class or function has responsibility over a single part of the functionality. For example, the tame animal naming function only names the animal, and does nothing else."*
+
+It is, of course, impossible to find all of the existing patterns, as there are way too many for them in existance, but you should be able to find 5 to 10 quite easily.
+
+### Exercise 2
+
+Examine your [**Software Tools Final Project**](https://centria.github.io/software-tools/part7/). 
+
+* What kind of *architecture styles or patterns* do you find? Why?
+
+Pick the ones that suit your software the best. Write about (half) a page, describing which features of your software implement that style and/or pattern.
+
+### Exercise 3
+
+* If you were to do the Software Tools Final Project again: 
+  * Being now aware of the different kinds of design patterns and architecture styles, would you do something differently? 
+  * Why/why not?
+
+Few sentences is quite enough, but you can write longer if you wish.
