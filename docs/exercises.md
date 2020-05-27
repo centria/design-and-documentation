@@ -561,7 +561,7 @@ Thematically, parts 4 and 5 are quite close together, so exercises are combined 
 
 ### Exercise 1
 
-Examine your [**Software Tools Final Project**](https://centria.github.io/software-tools/part7/). 
+Examine your [**Software Tools Final Project**](https://centria.github.io/software-tools/part7/) that your group created. 
 
 * What kind of *design patterns* do you find? Why? 
 
@@ -573,7 +573,7 @@ It is, of course, impossible to find all of the existing patterns, as there are 
 
 ### Exercise 2
 
-Examine your [**Software Tools Final Project**](https://centria.github.io/software-tools/part7/). 
+Examine your [**Software Tools Final Project**](https://centria.github.io/software-tools/part7/) that your group created. 
 
 * What kind of *architecture styles or patterns* do you find? Why?
 
