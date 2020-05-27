@@ -77,6 +77,8 @@ When we create architecture designs, we usually start with a very rough scetch, 
 
 As usual, there is several ways of creating the documentation. One way is to do it with charts, which explain for example the relations (such as ER diagrams) and data flow (flow charts or database charts). On the other hand, we could create lengthy written documentation, covering all the details, entities and their relations... Diagrams start to sound almost interesting at this point.
 
+All the diagrams we have done so far, have been leading us to architecture: With the diagrams, we can do all the steps required for software architecture, from the analysis to the very end, when we have evaluated and evolved our documentation to match the software, and vice versa.
+
 ## Tools of the trade
 
 There are several tools on how to create architecture diagrams. Most of them are not free of charge, but you can also use the familiar tools:
