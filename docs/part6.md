@@ -1,10 +1,10 @@
 ---
 title: "Part 6"
-permalink: /part6/
+permalink: /part6 - Up to you/
 nav_order: 6
-published: false
+published: true
 ---
 
-## Part 6
+## To be decided
 
-Here will be more.
+We have gone through the basics of design and documentation, and this part will conclude our journey.

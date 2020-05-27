@@ -582,7 +582,20 @@ Pick the ones that suit your software the best. Write about (half) a page, descr
 ### Exercise 3
 
 * If you were to do the Software Tools Final Project again: 
+  * Knowing the basics of design process and concepts, how could you use these while creating the project?
   * Being now aware of the different kinds of design patterns and architecture styles, would you do something differently? 
-  * Why/why not?
+    * Why/why not?
 
-Few sentences is quite enough, but you can write longer if you wish.
+Few sentences of each is quite enough, but you can write longer if you wish.
+
+### Exercise 4
+
+We have now gone through the *very basics* of documentation and design, but have one more lesson to go.
+
+* Is there something you would like us to handle on the last lesson?
+* Do you feel like something's missing?
+* Would you like to recap a certain topic more thoroughly?
+
+NOTICE! This particular exercise is voluntary, but I do appreciate if you answer, so we'll have topics for the last lesson!
+
+DISCLAIMER: There's no promise of handling every request, but let's try and satisfy as many as possible.
