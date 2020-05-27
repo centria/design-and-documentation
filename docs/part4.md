@@ -134,4 +134,21 @@ From [**Wikipedia**](https://en.wikipedia.org/wiki/Software_design#Design_Concep
 
 When designing a software, we can come across a design problem, which has been solved earlier by someone else. If a problem is a common one, solving it can become a template, or a pattern, describing the solution to the problem. We will look into these patterns deeper in the next part.
 
+A *software design pattern* is a general (or generalizable) and resualbe solution, usable to a commonly occuring problem in software design. In other words, if something appears often in designs, there is probably already a solution for it. These patterns have quite a range of variance, and we will not look into all of them, but pick a few that might interest us the most.
+
+Design patterns are meant to speed up the software development process, as they give a done and tested base and development paradigms. Using existing patterns helps us to keep our codebase clean, and at the same time aims to keep us from creating hidden mistakes, that have been solved earlier.
+
+## OOP Design Patterns
+
+As we have lately concentrated on Object Oriented Progamming (OOP), we will now also concentrate on the design patterns of OOP software. The OOP design patterns often describe the relations between classes and objects, similarly to the documentation and diagrams we have done so far. It is notable, that the design patterns for OOP might not be suitable for different kinds of languages or techniques, but our main goal is to strengthen our current base of knowledge.
+
+Object oriented progamming has been around for quite some time, and there is a multitude of different existing design patterns. We will not list "all" of them here, but will rather go through them in larger chunks, sort of categorizing them. As there is already quite a good material on those, we will not be writing it here again.
+
+The list we are using is this: [**https://en.wikipedia.org/wiki/Object-oriented_programming#Design_patterns**](https://en.wikipedia.org/wiki/Object-oriented_programming#Design_patterns). The list is probably not comprehensive, but will give us some idea, what kinds of patterns are available. You may open the link now, and after you have read the section of the Design Patterns, return to this site.
+
+## Other Design Patterns
+
+Just like with design patterns themselves, we trust the work of our predecessors. [**https://en.wikipedia.org/wiki/Software_design_pattern#Classification_and_list**](https://en.wikipedia.org/wiki/Software_design_pattern#Classification_and_list) will be our next stop, where we will visit some of the most common design patterns. After satisfied, return here.
+
+
 [**No exercises, but a placeholder link**](/design-and-documentation/exercises/#part-4)
