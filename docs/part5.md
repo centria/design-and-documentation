@@ -52,7 +52,7 @@ Not to be mixed with the previous part. When evaluating, we examine the software
 Just like design patterns, *architectural patterns* are reusable, general solutions to common problems. The patterns are used to solve issues such as computer hardware limitations (*how much memory can we use?*), availability (*how often can we close our system for maintenance, for example?*) and what do we do with our data (*what kind of database and where?*).
 
 Let's look at some of the most interesting architectural styles and patterns:
-[**https://en.wikipedia.org/wiki/Software_architecture#Architectural_styles_and_patterns**](https://en.wikipedia.org/wiki/Software_architecture#Architectural_styles_and_patterns) and another listing here: [**https://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patterns**](https://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patternshttps://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patterns). After you've had enough, return to this site.
+[**https://en.wikipedia.org/wiki/Software_architecture#Architectural_styles_and_patterns**](https://en.wikipedia.org/wiki/Software_architecture#Architectural_styles_and_patterns) and another listing here: [**https://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patterns**](https://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patterns). After you've had enough, return to this site.
 
 Look into (at least):
 * Monolithic application
