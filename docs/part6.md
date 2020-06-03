@@ -1,6 +1,6 @@
 ---
-title: "Part 6"
-permalink: /part6 - Recap/
+title: "Part 6  - Recap"
+permalink: /part6/
 nav_order: 6
 published: true
 ---
@@ -37,7 +37,7 @@ With all these, we also have the
 
 ## The tools
 
-For us to be successful in our documentation, we have to know how to create our documents properly. Let's wrap everything we have done above in a nice MD-file with some charts and example code.
+For us to be successful in our documentation, we have to know how to create our documents properly. Let's wrap everything we have done above in a nice MD-file with some diagrams and example code.
 
 ## Other stuff
 
